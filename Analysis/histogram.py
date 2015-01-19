@@ -202,7 +202,13 @@ def main() :
 		indice = indice + 1
 
 	vector = [x1,x2,x3,x4]
-	n, bins, patches = hist(vector, 20,  normed=False, histtype='bar',color=['red', 'magenta', 'green','blue'])
+	vecSans = list()
+	for i in vector :
+		if i :
+			vecSans += [i]
+
+	#n, bins, patches = hist(vecSans, 20,  normed=False, histtype='bar',color=['red', 'magenta'])
+	n, bins, patches = hist(vecSans, 20,  normed=False, histtype='fullstep',color=['red', 'magenta'])
 	plt.xlabel("size of the fit", fontsize=32)
 	plt.ylabel("frequency", fontsize=32)
 	plt.legend()
@@ -393,8 +399,14 @@ def main() :
 						x4=x4+[dicoTotal[clef][33]]
 		indice = indice + 1
 
-	vector = [x1,x2,x3,x4]
-	n, bins, patches = hist(vector, 20,  normed=False, histtype='bar',color=['red', 'magenta', 'green','blue'])
+	vector = [x1,x2,x3,x4]	
+	vecSans = list()
+	for i in vector :
+		if i :
+			vecSans += [i]
+
+	#n, bins, patches = hist(vecSans, 20,  normed=False, histtype='bar',color=['red', 'magenta'])
+	n, bins, patches = hist(vecSans, 20,  normed=False, histtype='fullstep',color=['red', 'magenta'])
 	plt.xlabel("size of the fit", fontsize=32)
 	plt.ylabel("frequency", fontsize=32)
 	plt.legend()
@@ -595,8 +607,13 @@ def sans() :
 		indice = indice + 1
 
 	vector = [x1,x2,x3,x4]
-	n, bins, patches = hist(vector, 20,  normed=False, histtype='bar',color=['red', 'magenta', 'green','blue'])
+	vecSans = list()
+	for i in vector :
+		if i :
+			vecSans += [i]
 
+	#n, bins, patches = hist(vecSans, 20,  normed=False, histtype='bar',color=['red', 'magenta'])
+	n, bins, patches = hist(vecSans, 20,  normed=False, histtype='fullstep',color=['red', 'magenta'])
 	plt.legend()
 	plt.title('histogram of the slopes',size = 20)
 	savefig('C:\\Users\\valentin\Desktop\\boulot_mines\\S3Recherche\\Python\\correlation\\histogramSans.png')

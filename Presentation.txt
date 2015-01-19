@@ -1,0 +1,5 @@
+This work was done during the research internship of the second year at MinesParisTech by Valentin ANJOU at the IBENS, 
+under the supervision of Silvia DE MONTE, Francesco D'OVIDIO and Chris BOWLER at the IBENS (Institut de Biologie de l'Ecole Normale Supérieure). 
+
+The goal was to concentrate the data of various sources and to analyse the slopes of the rank-abundance distribution to try to find a correlation between those elements through the data of the TaraOcean's expedition. 
+
